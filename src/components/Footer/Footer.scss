@@ -1,0 +1,25 @@
+.app__footer {
+  width: 100%;
+  justify-content: center !important;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2f2e41;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 2000px) {
+    padding: 2rem;
+  }
+}
+
+.app__footer-copyrights {
+  display: flex;
+  column-gap: 2rem;
+
+  p {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
