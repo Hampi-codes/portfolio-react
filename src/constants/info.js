@@ -72,7 +72,7 @@ const info = {
     {
       title: "To Do App",
       description:
-        "A productivity-focused to-do list app built with React, Redux, and Ant Design, featuring task creation, filtering, and local state management.",
+        "A productivity-focused to-do list app built with React, Redux, and Material UI, featuring task creation, filtering, and local state management.",
       tag: "Life untaggler",
       image: images.toDoApp,
       codeLink: "https://github.com/Hampi-codes/todo",
