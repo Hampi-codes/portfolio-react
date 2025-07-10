@@ -165,7 +165,7 @@ const info = {
           name: "Worked Upon HRMS Project",
         },
       ],
-      year: "Sept 2022 - Aug 2023",
+      year: "Sept 2023 - May 2024",
     },
     {
       works: [
@@ -178,7 +178,7 @@ const info = {
           name: "Worked upon Smart City Management System",
         },
       ],
-      year: "Sep 2023 - Present",
+      year: "Jun 2024 - Present",
     },
   ],
 };
