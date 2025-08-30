@@ -178,8 +178,21 @@ const info = {
           name: "Worked upon Smart City Management System",
         },
       ],
-      year: "Jun 2024 - Present",
+      year: "Jun 2024 - Jul 2025",
     },
+    {
+      works: [
+        {
+          name: "Frontend Developer",
+          company: "Sembark Tech",
+        },
+        {
+          desc: "React JS, VITE, NX monorepo, Shadcn, and RESTful API",
+          name: "Working on SaaS Travel platform",
+        },
+      ],
+      year: "Jul 2025 - Present",
+    }
   ],
 };
 

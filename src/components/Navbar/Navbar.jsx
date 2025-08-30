@@ -37,7 +37,7 @@ const Navbar = () => {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "contact"].map(
+        {["home", "about", "work", "skills & experience", "contact"].map(
           (item) => (
             <li
               key={`link-${item}`}
@@ -64,7 +64,7 @@ const Navbar = () => {
                 "home",
                 "about",
                 "work",
-                "skills",
+                "skills & experience",
                 // "testimonials",
                 "contact",
               ].map((item) => (
