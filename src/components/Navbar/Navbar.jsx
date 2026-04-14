@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from "react";
-
+import { useState, useEffect } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-
 import { images } from "../../constants";
-
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -47,33 +44,40 @@ const Navbar = () => {
                 {item}
               </a>
             </li>
-          )
+          ),
         )}
       </ul>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <HiMenuAlt4
+          onClick={() => setToggle(true)}
+          onTouchStart={() => setToggle(true)}
+          style={{ cursor: "pointer" }}
+        />
         {toggle && (
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.75, ease: "easeOut" }}
           >
-            <HiX onClick={() => setToggle(false)} />
+            <HiX
+              onClick={() => setToggle(false)}
+              onTouchStart={() => setToggle(false)}
+              style={{ cursor: "pointer" }}
+            />
             <ul>
-              {[
-                "home",
-                "about",
-                "work",
-                "skills & experience",
-                // "testimonials",
-                "contact",
-              ].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["home", "about", "work", "skills & experience", "contact"].map(
+                (item) => (
+                  <li key={item}>
+                    <a
+                      href={`#${item}`}
+                      onClick={() => setToggle(false)}
+                      onTouchStart={() => setToggle(false)}
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ),
+              )}
             </ul>
           </motion.div>
         )}
