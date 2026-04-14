@@ -66,11 +66,11 @@ const Contact = () => {
         <div className="app__contact-card">
           <img src={images.email} alt="email" />
           <a
-            href="mailto:yogeshkumar9582264326@gmail.com"
+            href="mailto:workwith.yogesh3000@gmail.com"
             className="p-text"
             target="_blank"
           >
-            yogeshkumar9582264326@gmail.com
+            workwith.yogesh3000@gmail.com
           </a>
         </div>
         <div className="app__contact-card">
@@ -129,11 +129,7 @@ const Contact = () => {
               required
             />
           </div>
-          <button
-            type="submit"
-            className="portfolio-button"
-            disabled={loading}
-          >
+          <button type="submit" className="portfolio-button" disabled={loading}>
             {loading ? "Sending Message..." : "Send Message"}
           </button>
         </form>
@@ -151,5 +147,5 @@ const Contact = () => {
 export default AppWrap(
   MotionWrap(Contact, "app__contact"),
   "contact",
-  "app__primarybg"
+  "app__primarybg",
 );

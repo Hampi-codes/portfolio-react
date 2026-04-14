@@ -39,7 +39,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text" id="skills">
         Skills <span>&</span> Experience
       </h2>
       <div className="app__skills-container">
@@ -108,6 +108,6 @@ const Skills = () => {
 
 export default AppWrap(
   MotionWrap(Skills, "app__skills"),
-  "skills",
-  "app__whitebg"
+  "skills & experience",
+  "app__whitebg",
 );
